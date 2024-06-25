@@ -1,1 +1,2 @@
-# JS_4th_Exercise_3rd_angle_triangle
+# JS_5th_Exercise_Basic_Calculator
+# realiza validaciones ingreso solo numeros validos
