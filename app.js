@@ -6,7 +6,6 @@ function app(){
     let result;
     const [numb1, numb2, operador] = enterValues();
     result = calculate(numb1, numb2, operador);
-    // result = calculate('1', 'K', '*')
     printTerminal(result); 
 }
 app()
