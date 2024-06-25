@@ -1,5 +1,5 @@
 export function calculate(numberOne, numberTwo, varOperator) {
-    let resultCalculated = "";
+    let resultCalculated = "unknown value";
     let mensaje = "";
 
     switch(varOperator) {
@@ -14,14 +14,12 @@ export function calculate(numberOne, numberTwo, varOperator) {
             break;
     
         case '*':
-            try{
+         if (isNaN(numberOne) || isNaN(numberTwo)){
+            mensaje=`result will be unknown value`; 
+         } else {
             resultCalculated = numberOne * numberTwo;
-            mensaje=`result will be ${resultCalculated}`;
-            }
-            catch {
-                console.log("paso por el catch");
-                mensaje='result will be unknown value'; // Si ocurrió un error, manéjalo
-              }
+            mensaje=`result will be ${resultCalculated}`;  
+         }          
             break;
         case '/':
             resultCalculated = numberOne / numberTwo;
@@ -29,7 +27,6 @@ export function calculate(numberOne, numberTwo, varOperator) {
             break;
     
         default:
-            console.log('unknown value');
             mensaje='result will be unknown value';
             break;
     }

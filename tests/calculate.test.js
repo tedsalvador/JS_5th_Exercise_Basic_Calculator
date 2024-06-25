@@ -12,6 +12,7 @@ describe('Test for Simple calculator', () => {
         //When - Action
         const result = calculate(value1, value2, operator)
         //Then
+        console.log(result);
         expect(result).toBe("result will be 3")
     });
 
@@ -24,6 +25,7 @@ describe('Test for Simple calculator', () => {
         //When - Action
         const result = calculate(value1, value2, operator)
         //Then
+        console.log(result);
         expect(result).toBe("result will be unknown value")
     });
 
@@ -36,6 +38,7 @@ describe('Test for Simple calculator', () => {
         //When - Action
         const result = calculate(value1, value2, operator)
         //Then
+        console.log(result);
         expect(result).toBe("result will be unknown value")
     });
 
